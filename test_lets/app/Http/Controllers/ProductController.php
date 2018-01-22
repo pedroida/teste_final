@@ -54,12 +54,12 @@ class ProductController extends Controller{
         }
     }
 
-    public function save(){
+    public function save(Request $request){
 
-        $title = ucfirst(Request::input('title'));
-        $description = ucfirst(Request::input('description'));
-        $price = Request::input('price');
-        $image = Input::file('image');
+        $title = ucfirst($request->input('title'));
+        $description = ucfirst($request->input('description'));
+        $price = $request->input('price');
+        $image = $request->file('image');
 
         $source = array('.', ',');
         $replace = array('', '.');

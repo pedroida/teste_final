@@ -35,7 +35,7 @@
 				</div>
 				<div class="btn-card">
 					<button type="button" class="btn btn-success" data-toggle="modal" data-target="#{{ $p->id}}">
-						Ver Tudo
+						Visualizar
 					</button>
 					<a href="{{ action('ProductController@edit',$p->id) }}"  class="btn btn-info">Editar Produto</a>
 					
